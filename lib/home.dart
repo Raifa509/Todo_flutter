@@ -8,7 +8,7 @@ class HomePage extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(
         backgroundColor: Color.fromARGB(255, 0, 82, 159),
-        toolbarHeight: 130,
+        toolbarHeight: 135,
         shape: const RoundedRectangleBorder(
             borderRadius: BorderRadius.vertical(bottom: Radius.circular(400))),
       ),
@@ -48,16 +48,16 @@ class HomePage extends StatelessWidget {
                     Navigator.pushNamed(context, '/task');
                   },
                   style: ButtonStyle(
-                      // ignore: deprecated_member_use
-                      shape: MaterialStateProperty.all(RoundedRectangleBorder(
+                   
+                      shape:WidgetStateProperty.all(RoundedRectangleBorder(
                           borderRadius: BorderRadius.circular(10)))
-                      // ignore: deprecated_member_use
+                     
                       ,
-                      minimumSize: MaterialStateProperty.all(
+                      minimumSize:WidgetStateProperty.all(
                         const Size(double.infinity, 48),
                       ),
-                      // ignore: deprecated_member_use
-                      backgroundColor: MaterialStateProperty.all(
+                    
+                      backgroundColor: WidgetStateProperty.all(
                         Color.fromARGB(255, 0, 82, 159),
                       )),
                   child: const Text(
